@@ -4,22 +4,22 @@
         <attribute name="name" value="TFUNC"/>
         <attribute name="authors" value="SAKEUS MALAU"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-11-11 09:05:48 PM"/>
+        <attribute name="saved" value="2025-11-11 09:15:23 PM"/>
         <attribute name="created" value="U0FLRVVTIE1BTEFVO0RFU0tUT1AtUFVURkxKVTsyMDI1LTExLTExOzA5OjAzOjUxIFBNOzMyNzI="/>
         <attribute name="edited" value="U0FLRVVTIE1BTEFVO0RFU0tUT1AtUFVURkxKVTsyMDI1LTExLTExOzA5OjA0OjUwIFBNOzI7TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTExLTExOzA4OjIxOjI1IFBNO1RGVU5DWzFdLmZwcmc7NzM2NA=="/>
-        <attribute name="edited" value="U0FLRVVTIE1BTEFVO0RFU0tUT1AtUFVURkxKVTsyMDI1LTExLTExOzA5OjA1OjQ4IFBNOzI7MzM4OQ=="/>
+        <attribute name="edited" value="U0FLRVVTIE1BTEFVO0RFU0tUT1AtUFVURkxKVTsyMDI1LTExLTExOzA5OjE1OjIzIFBNOzQ7MzM4NQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="x, hasil" type="Integer" array="False" size=""/>
+            <declare name="x, hasil, r" type="Integer" array="False" size=""/>
             <input variable="x"/>
             <output expression="&quot;Bilangan yang dimasukkan : &quot; &amp; x" newline="True"/>
-            <call expression="angka(x)"/>
-            <output expression="&quot;Hasil perhitungan rekursif : &quot; &amp; angka(x)" newline="True"/>
+            <assign variable="r" expression="angka(x)"/>
+            <output expression="&quot;Hasil perhitungan rekursif : &quot; &amp; r" newline="True"/>
         </body>
     </function>
-    <function name="angka" type="None" variable="">
+    <function name="angka" type="Integer" variable="result">
         <parameters>
             <parameter name="x" type="Integer" array="False"/>
         </parameters>
