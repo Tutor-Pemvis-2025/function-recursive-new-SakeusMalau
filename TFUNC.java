@@ -2,7 +2,6 @@
 
 import java.util.*;
 import java.lang.Math;
-
 public class TFUNC {
     private static Scanner input = new Scanner(System.in);
 
