@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="TFUNC"/>
+        <attribute name="authors" value="SAKEUS MALAU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-11 09:05:48 PM"/>
+        <attribute name="created" value="U0FLRVVTIE1BTEFVO0RFU0tUT1AtUFVURkxKVTsyMDI1LTExLTExOzA5OjAzOjUxIFBNOzMyNzI="/>
+        <attribute name="edited" value="U0FLRVVTIE1BTEFVO0RFU0tUT1AtUFVURkxKVTsyMDI1LTExLTExOzA5OjA0OjUwIFBNOzI7TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTExLTExOzA4OjIxOjI1IFBNO1RGVU5DWzFdLmZwcmc7NzM2NA=="/>
+        <attribute name="edited" value="U0FLRVVTIE1BTEFVO0RFU0tUT1AtUFVURkxKVTsyMDI1LTExLTExOzA5OjA1OjQ4IFBNOzI7MzM4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, hasil" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <output expression="&quot;Bilangan yang dimasukkan : &quot; &amp; x" newline="True"/>
+            <call expression="angka(x)"/>
+            <output expression="&quot;Hasil perhitungan rekursif : &quot; &amp; angka(x)" newline="True"/>
+        </body>
+    </function>
+    <function name="angka" type="None" variable="">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result, hasilb" type="Integer" array="False" size=""/>
+            <if expression="x==1">
+                <then>
+                    <assign variable="result" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="hasilb" expression="angka(x-1)"/>
+                    <assign variable="result" expression="x+hasilb"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
